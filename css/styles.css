@@ -1,0 +1,53 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: rgba(255, 182, 193, 0.5); /* Milky pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars for floating flowers */
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background: #98FB98; /* Green fields */
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #333;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h2, main p {
+    font-family: 'Dancing Script', cursive;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #98FB98; /* Green fields */
+}
+
+.flower {
+    position: absolute;
+    font-size: 2em; /* Adjust size of the emoji */
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
